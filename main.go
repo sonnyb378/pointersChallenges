@@ -39,13 +39,21 @@ func main() {
 	// fmt.Printf("Before swap: str1 is %v; str2 is %v\n", str1, str2)
 	// intermediate.SwapStrings(&str1, &str2)
 
-	fmt.Println("Challenge 5: Update struct fields with pointers")
-	name := "Alice"
-	age := 25
-	person := &intermediate.Person{Name: name, Age: age}
-	fmt.Println()
-	fmt.Println("Before update: ", *person)
-	intermediate.UpdateStruct(person, "Bob", 30)
-	fmt.Println("After update: ", *person)
-	fmt.Println()
+	// fmt.Println("Challenge 5: Update struct fields with pointers")
+	// name := "Alice"
+	// age := 25
+	// person := &intermediate.Person{Name: name, Age: age}
+	// fmt.Println()
+	// fmt.Println("Before update: ", *person)
+	// intermediate.UpdateStruct(person, "Bob", 30)
+	// fmt.Println("After update: ", *person)
+	// fmt.Println()
+
+	fmt.Println("Challenge 6: Modify Map Value Using Pointer")
+	myMap := map[string]int{"a": 1, "b": 2, "c": 3}
+	key := "b"
+	newValue := 10
+	fmt.Printf("Before --> %p:%v\n", &myMap, myMap)
+	intermediate.ModifyMapValue(&myMap, key, newValue)
+	fmt.Printf("After --> %p:%v\n", &myMap, myMap)
 }
