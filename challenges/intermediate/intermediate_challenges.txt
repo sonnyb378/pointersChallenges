@@ -1,0 +1,46 @@
+Challenge 4: Swap Two Strings
+Description: Write a Go function that swaps the values of two strings using pointers.
+
+Input:
+str1 := "Hello"
+str2 := "World"
+
+Output:
+str1 is now "World"
+str2 is now "Hello"
+
+Incorrect Output:
+str1 is still "Hello"
+str2 is still "World"
+
+Challenge 5: Update Struct Fields with Pointers
+Description: Write a function that takes a pointer to a struct and updates one or more of its fields.
+
+Input:
+type Person struct {
+    Name string
+    Age  int
+}
+
+person := &Person{Name: "Alice", Age: 25}
+updatePerson(person, "Bob", 30)
+
+Output:
+Person{Name: "Bob", Age: 30}
+
+Incorrect Output:
+Person{Name: "Alice", Age: 25}
+
+Challenge 6: Modify Map Value Using Pointer
+Description: Write a Go function that takes a pointer to a map and modifies the value associated with a given key.
+
+Input:
+myMap := map[string]int{"a": 1, "b": 2, "c": 3}
+key := "b"
+newValue := 10
+
+Output:
+myMap is now map[a:1 b:10 c:3]
+
+Incorrect Output:
+myMap is still map[a:1 b:2 c:3]

@@ -1,0 +1,24 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj/
+_test/
+/vendor/
+**/.DS_Store
+
+# Output files
+*.exe
+*.out
+
+# Binaries, plugins, libs
+*.dll
+*.dylib
+*.exe
+*.exe~
+
+# Testing
+*.test
+*.tmp

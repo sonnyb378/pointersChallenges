@@ -1,0 +1,41 @@
+Challenge 1: Swap Two Integers
+Description: Write a Go function that swaps the values of two integers using pointers.
+
+Input:
+a := 5
+b := 10
+
+Output:
+a is now 10
+b is now 5
+
+Incorrect Output:
+a is still 5
+b is still 10
+
+Challenge 2: Modify Slice Element
+Description: Write a function that takes a slice and a position as input, and changes the value of the element at that position to a new value.
+
+Input:
+slice := []int{1, 2, 3, 4, 5}
+position := 2
+newValue := 10
+
+Output:
+slice is now [1 2 10 4 5]
+
+Incorrect Output:
+slice is still [1 2 3 4 5]
+
+Challenge 3: Increment Using Pointer
+Description: Write a Go function that takes a pointer to an integer and increments the value it points to.
+
+Input:
+num := 5
+pointer := &num
+
+Output:
+num is now 6
+
+Incorrect Output:
+num is still 5
