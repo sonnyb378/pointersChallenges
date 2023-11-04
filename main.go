@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/sonnyb378/pointersChallenges/challenges/easy"
+	// "github.com/sonnyb378/pointersChallenges/challenges/easy"
+	"github.com/sonnyb378/pointersChallenges/challenges/intermediate"
 )
 
 func main() {
@@ -24,11 +25,17 @@ func main() {
 	// fmt.Println("Before: ", slice, "; position is ", position, "; newValue is ", newValue)
 	// easy.ModifySlice(slice, position, newValue)
 
-	fmt.Println("Increment Using Pointer")
-	num := 5
-	pointer := &num
-	incrementValue := 1
-	fmt.Printf("Counter: %v; incrementValue: %v\n", num, incrementValue)
-	easy.Increment(pointer, incrementValue)
+	// fmt.Println("Increment Using Pointer")
+	// num := 5
+	// pointer := &num
+	// incrementValue := 1
+	// fmt.Printf("Counter: %v; incrementValue: %v\n", num, incrementValue)
+	// easy.Increment(pointer, incrementValue)
 
+	// INTERMEDIATE
+	fmt.Println("Challenge 4: Swap Two Strings")
+	str1 := "Hello"
+	str2 := "World"
+	fmt.Printf("Before swap: str1 is %v; str2 is %v\n", str1, str2)
+	intermediate.SwapStrings(&str1, &str2)
 }
