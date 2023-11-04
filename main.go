@@ -4,7 +4,8 @@ import (
 	"fmt"
 
 	// "github.com/sonnyb378/pointersChallenges/challenges/easy"
-	"github.com/sonnyb378/pointersChallenges/challenges/intermediate"
+	// "github.com/sonnyb378/pointersChallenges/challenges/intermediate"
+	"github.com/sonnyb378/pointersChallenges/challenges/hard"
 )
 
 func main() {
@@ -49,11 +50,23 @@ func main() {
 	// fmt.Println("After update: ", *person)
 	// fmt.Println()
 
-	fmt.Println("Challenge 6: Modify Map Value Using Pointer")
-	myMap := map[string]int{"a": 1, "b": 2, "c": 3}
-	key := "b"
-	newValue := 10
-	fmt.Printf("Before --> %p:%v\n", &myMap, myMap)
-	intermediate.ModifyMapValue(&myMap, key, newValue)
-	fmt.Printf("After --> %p:%v\n", &myMap, myMap)
+	// fmt.Println("Challenge 6: Modify Map Value Using Pointer")
+	// myMap := map[string]int{"a": 1, "b": 2, "c": 3}
+	// key := "b"
+	// newValue := 10
+	// fmt.Printf("Before --> %p:%v\n", &myMap, myMap)
+	// intermediate.ModifyMapValue(&myMap, key, newValue)
+	// fmt.Printf("After --> %p:%v\n", &myMap, myMap)
+
+	fmt.Println("Challenge 7: Reverse a Linked List Using Pointers")
+	myList := hard.LinkedList{}
+	myList.Add(10)
+	myList.Add(2)
+	myList.Add(3)
+	myList.Add(4)
+	myList.Add(5)
+	hard.ReverseLinkedList(&myList)
+
+	fmt.Println("Challenge 8: Implement a Linked List with Pointers")
+	hard.CreateLinkedList()
 }
