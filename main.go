@@ -33,9 +33,19 @@ func main() {
 	// easy.Increment(pointer, incrementValue)
 
 	// INTERMEDIATE
-	fmt.Println("Challenge 4: Swap Two Strings")
-	str1 := "Hello"
-	str2 := "World"
-	fmt.Printf("Before swap: str1 is %v; str2 is %v\n", str1, str2)
-	intermediate.SwapStrings(&str1, &str2)
+	// fmt.Println("Challenge 4: Swap Two Strings")
+	// str1 := "Hello"
+	// str2 := "World"
+	// fmt.Printf("Before swap: str1 is %v; str2 is %v\n", str1, str2)
+	// intermediate.SwapStrings(&str1, &str2)
+
+	fmt.Println("Challenge 5: Update struct fields with pointers")
+	name := "Alice"
+	age := 25
+	person := &intermediate.Person{Name: name, Age: age}
+	fmt.Println()
+	fmt.Println("Before update: ", *person)
+	intermediate.UpdateStruct(person, "Bob", 30)
+	fmt.Println("After update: ", *person)
+	fmt.Println()
 }

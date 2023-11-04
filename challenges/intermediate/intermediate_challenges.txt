@@ -22,8 +22,10 @@ type Person struct {
     Age  int
 }
 
-person := &Person{Name: "Alice", Age: 25}
-updatePerson(person, "Bob", 30)
+initial struct values
+Name: Alice
+Age: 25
+UpdatePerson(person, "Bob", 30)
 
 Output:
 Person{Name: "Bob", Age: 30}
