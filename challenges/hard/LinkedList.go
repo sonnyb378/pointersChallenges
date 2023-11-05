@@ -27,9 +27,39 @@ func (list *LinkedList) Add(data int) {
 	}
 }
 
-func (list *LinkedList) Delete(index int) {
-	panic("")
+func (list *LinkedList) DeleteAt(index int) {
+
+	if index < 0 || list.head == nil {
+		fmt.Println("Error: Index out of range or List is empty")
+		return
+	}
+
+	if index == 0 {
+		current := list.head
+		list.head = list.head.next
+		fmt.Printf("Deleting position at index: %v with data %v\n", index, current.data)
+		return
+	}
+
+	i := 0
+	value := 0
+	current := list.head
+	previous := current
+
+	for current != nil && i < index {
+		previous = current
+		current = current.next
+		i++
+	}
+
+	if current != nil {
+		previous.next = current.next
+		value = current.data
+	}
+
+	fmt.Printf("Deleting position at index: %v with data %v\n", index, value)
 }
+
 func (list *LinkedList) Search(data int) {
 	panic("")
 }
