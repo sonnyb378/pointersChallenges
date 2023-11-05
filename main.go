@@ -60,13 +60,13 @@ func main() {
 
 	fmt.Println("Challenge 7: Reverse a Linked List Using Pointers")
 	myList := hard.LinkedList{}
-	myList.Add(10)
+	myList.Add(1)
 	myList.Add(2)
 	myList.Add(3)
 	myList.Add(4)
 	myList.Add(5)
 	hard.ReverseLinkedList(&myList)
 
-	fmt.Println("Challenge 8: Implement a Linked List with Pointers")
-	hard.CreateLinkedList()
+	// fmt.Println("Challenge 8: Implement a Linked List with Pointers")
+	// hard.CreateLinkedList()
 }

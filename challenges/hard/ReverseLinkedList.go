@@ -18,7 +18,23 @@ func ReverseLinkedList(list *LinkedList) {
 	// Incorrect Output:
 	// 1 -> 2 -> 3 -> 4 -> 5
 
+	var previousHolder *Node = nil
+	current := list.head
+	var nextHolder *Node = nil
+
 	list.Print()
-	fmt.Printf("%p\n", list)
+
+	for current != nil {
+		nextHolder = current.next
+		current.next = previousHolder
+		previousHolder = current
+		current = nextHolder
+	}
+
+	list.head = previousHolder
+
+	fmt.Println()
+	fmt.Println("Reversed: ")
+	list.Print()
 
 }

@@ -41,6 +41,7 @@ func (list *LinkedList) Print() {
 		current = current.next
 	}
 	fmt.Println("nil")
+	fmt.Println()
 }
 
 func CreateLinkedList() {
