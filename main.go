@@ -74,6 +74,14 @@ func main() {
 	myList.Add(3)
 	myList.Add(4)
 	myList.Add(5)
-	myList.DeleteAt(1)
+
+	myList.Search(1)
+	myList.Search(8)
+	myList.Search(0)
+	myList.Search(-1)
+	myList.Search(4)
+	myList.Search(5)
+	// myList.DeleteAt(1)
+
 	myList.Print()
 }

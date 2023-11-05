@@ -61,7 +61,24 @@ func (list *LinkedList) DeleteAt(index int) {
 }
 
 func (list *LinkedList) Search(data int) {
-	panic("")
+
+	index := 0
+
+	if list.head.data == data {
+		fmt.Printf("> %v found in list at index %v\n", data, index)
+		return
+	}
+	current := list.head
+
+	for current != nil {
+		if current.data == data {
+			fmt.Printf(">> %v found in list at index %v\n", data, index)
+			return
+		}
+		current = current.next
+		index++
+	}
+	fmt.Printf(">> %v not found!\n", data)
 }
 
 func (list *LinkedList) Print() {
