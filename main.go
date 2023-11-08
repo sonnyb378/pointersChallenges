@@ -67,21 +67,24 @@ func main() {
 	// myList.Add(5)
 	// hard.ReverseLinkedList(&myList)
 
-	fmt.Println("Challenge 8: Implement a Linked List with Pointers")
-	myList := hard.LinkedList{}
-	myList.Add(1)
-	myList.Add(2)
-	myList.Add(3)
-	myList.Add(4)
-	myList.Add(5)
+	// fmt.Println("Challenge 8: Implement a Linked List with Pointers")
+	// myList := hard.LinkedList{}
+	// myList.Add(1)
+	// myList.Add(2)
+	// myList.Add(3)
+	// myList.Add(4)
+	// myList.Add(5)
 
-	myList.Search(1)
-	myList.Search(8)
-	myList.Search(0)
-	myList.Search(-1)
-	myList.Search(4)
-	myList.Search(5)
+	// myList.Search(1)
+	// myList.Search(8)
+	// myList.Search(0)
+	// myList.Search(-1)
+	// myList.Search(4)
+	// myList.Search(5)
 	// myList.DeleteAt(1)
 
-	myList.Print()
+	// myList.Print()
+
+	fmt.Println("Challenge 9: Swap Nodes in a Binary Tree Using Pointers")
+	hard.SwapNodes()
 }

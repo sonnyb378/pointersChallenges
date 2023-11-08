@@ -12,8 +12,5 @@ Working through the "Pointers Challenges" has provided me with a practical under
 - How to create and use pointers effectively.
 - Techniques for modifying data using pointers.
 - Advanced pointer concepts, including working with data structures.
-- Understanding the importance of memory management with pointers.
 - Debugging and troubleshooting skills related to pointers.
-- Tips for optimizing pointer usage.
-- Consideration of edge cases in pointer manipulation.
 
